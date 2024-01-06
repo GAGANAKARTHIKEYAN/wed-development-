@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in a Box</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Nunito">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<style>
+    h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    color: #e6007e;
+   
+}
+h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #e6007e;
+    margin-top: 5px ;
+}
+
+    .box {
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top:10px;
+    margin-bottom: 10px;
+ }
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    padding: 10px;
+}
+
+.box img {
+    max-width: 40%;
+    height: 400px;
+    border-radius: 20px;
+}
+a{
+    display: block;
+    padding: 10px 20px;
+    background-color: #e6007e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: center;
+    width: 80px;
+    margin-left: 40px;
+    text-align: center;
+
+}
+body{
+    background-image:url("background 1.jpeg") ;
+    background-repeat:no-repeat;
+    background-size:100%;
+    
+
+}
+.box1{
+    display: inline-flex;
+  align-items: center;
+  margin-left: 330px;
+
+}
+a:hover {
+    background-color: #333;
+}
+.contact-icons {
+  display: inline-flex;
+  align-items: center; 
+  
+}
+
+footer {
+        background-color:rgb(137, 12, 56);
+        color:aliceblue;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+.fa-icon {
+    text-align: center;
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-left:150px;
+}
+
+.fa-icon:hover {
+  color: pink; /* Add hover effect */
+}
+.about{
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-icons {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
+  }
+}
+<style>
+    .box1 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .box1 {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+
+
+</style>
+<body>
+<div class="box">
+    <h1>Welcome!</h1><hr><br>
+    <img src="photo of me.jpg" alt="Your Image"><hr>
+    <h2>Hello There, I am Gagana.K</h2>
+</div>
+<div class="box1">
+<div class="Resume">
+    <a href="resume(hack).html">Resume</a>
+</div>
+<div class="Projects">
+    <a href="project(hack).html">Projects</a>
+</div>
+<div class="Contact">
+    <a href="contact(hack).html">Contact Me</a>
+</div>
+</div><hr>
+<div class="about">
+    <h2>About Me
+    </h2>
+    <p>“Hello! I am a passionate Front-End Web Developer with a knack for creating interactive and aesthetically pleasing websites. I have a strong understanding of HTML, CSS, and JavaScript, and I’m proficient in responsive web design to ensure optimal user experiences on any device. I enjoy turning complex problems into simple, beautiful, and intuitive designs. My keen eye for detail and my commitment to delivering high-quality code have allowed me to create seamless user interfaces. I’m always eager to learn more and improve my skills to stay at the forefront of front-end web development trends. Let’s create something amazing together!”.</p>
+</div><hr>
+<div class="contact-icons">
+    <a href="https://www.instagram.com/gag_ana01/" class="fa-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/gagana-k" class="fa-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="tel:+7483208030" class="fa-icon"><i class="fas fa-phone-alt"></i></a>
+    <a href="mailto:gaganak.btech23@rvu.edu.in" class="fa-icon">
+        <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  <footer>
+    &copy 2023 Gagana.K website.
+ </footer>
+</body>
+</html>

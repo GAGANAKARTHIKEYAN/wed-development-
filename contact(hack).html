@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Nunito">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+      h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: #e6007e;
+    margin-top: 5px ;
+}
+
+
+
+    .contact-me {
+      margin-top: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  
+
+}
+
+.contact-me h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-me label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-me input,
+.contact-me textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-me button {
+    display: block;
+    padding: 10px 20px;
+    background-color:#e6007e;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+ 
+}
+.contact-me button:hover {
+    background-color: pink;
+}
+
+/* Media queries for different screen sizes */
+
+@media (max-width: 768px) {
+  .contact-me {
+    padding: 10px;
+  }
+
+  .contact-me label {
+    font-size: smaller;
+  }
+
+  .contact-me button {
+    font-size: smaller;
+  }
+}
+footer {
+        background-color:rgb(137, 12, 56);
+        color:aliceblue;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+@media (max-width: 576px) {
+  .contact-me {
+    padding: 5px;
+  }
+
+  .contact-me label {
+    font-size: x-small;
+  }
+
+  .contact-me button {
+    font-size: x-small;
+  }
+}
+
+.contact-me {
+  padding: 10px; /* Reduced padding */
+  border: 0.5px solid #efdcdc; /* Thin border */
+  margin-bottom: 10px; /* Slightly smaller bottom margin */
+  margin-left: 200px;
+  margin-right:270px;
+  margin-top:20px;
+  
+}
+a{
+    display: block;
+    padding: 10px 20px;
+    background-color: #e6007e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: center;
+    width: 80px;
+    margin-left: 90px;
+    text-align: center;
+}
+a:hover {
+    background-color: #333;}
+    .contact-icons {
+  display: inline-flex;
+  align-items: center; 
+  
+}
+.fa-icon {
+    text-align: center;
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-left:200px;
+}
+
+.fa-icon:hover {
+  color: pink; /* Add hover effect */
+}
+body{
+    background-image:url("background 3.jpeg") ;
+    background-repeat:no-repeat;
+    background-size:100%;
+} 
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px; 
+    background-color:transparent;
+}
+.fas.fa-envelope {
+    color:#e6007e; /* Change this to your desired pink color */
+    font-size: 40px; /* Adjust font size as needed */
+    margin-left: 700px;
+}
+</style>
+<body>
+    <section class="contact-me">
+      <div class="icon-container">
+        <i class="fas fa-envelope"></i>
+      </div>
+
+        <h2>Contact Me</h2>
+        <form action="your-contact-form-handler.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="number" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" onclick="alert('Thank you for visiting the Page.')" >Submit</button>
+        </form>
+      </section>
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/gag_ana01/" class="fa-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/gagana-k" class="fa-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="tel:+7483208030" class="fa-icon"><i class="fas fa-phone-alt"></i></a>
+      </div>
+      <footer>
+        &copy 2023 Gagana.K website.
+     </footer>
+</body>
+</html>
